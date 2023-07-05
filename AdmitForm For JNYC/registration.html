@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admit Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <style>
+    *{
+      margin: 0px ;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    .con {
+      padding-top: 20px;
+      box-shadow: 0px 0px 20px 0px rgb(167, 167, 167);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .gen input {
+      width: 20%;
+      height: 20px;
+    }
+    .con .mar {
+      margin-top: 30px;
+    }
+    .t{
+      width: 99.9%;
+    }
+    .t  tr , td  {
+        text-align: center;
+    }
+    .t input {
+      border: none;
+      outline: none;
+    }
+    #btn {
+      margin-top: 50px;
+    }
+    .th {
+      height: 50px;
+      font-size: 20px;
+    }
+    .displayImage{
+            background-position: center;
+            background-size: cover;
+        }
+    .picUp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .navL {
+  position: relative;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(93, 186, 155);
+  font-size: 30px;
+}
+  </style>
+  <nav class="navbar navbar-light bg-dark sticky-top">
+    <a class="navbar-brand" href="https://jnyc.co.in">
+      <img src="./Logo1.png" width="120"class="d-inline-block align-top" alt="">
+    </a>
+    <form class="form-inline center navL">Admit Card Registration</form>
+  </nav>
+<div class="container con">
+  <div class="row logo">
+    <h2>Admit Card Registration</h2>
+  </div>
+  <form>
+    <div class="form-group mar">
+      <div class="row">
+        <div class="col">
+          <label for="name">First name:</label>
+          <input type="text" class="form-control" id="fName" >
+        </div>
+        <div class="col">
+          <label for="name">Last Name:</label>
+          <input type="text" class="form-control" id="lName" >
+        </div>
+      </div>
+    </div>
+    <div class="form-group mar">
+      <label for="email">Guardian name:</label>
+      <input type="email" class="form-control" id="fhName">
+    </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group mar">
+            <label for="city">Registration No:</label>
+            <input type="number" class="form-control" id="roll" placeholder="Example-0398">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group mar">
+            <label for="city">Examination Year:</label>
+            <input type="number" class="form-control valid-2" id="year" placeholder="Example-23">
+          </div>
+        </div>
+      </div>
+    <div class="form-group mar">
+      <label for="phone">DOB:</label>
+      <input type="date" class="form-control" id="dob" placeholder="Enter your phone number">
+    </div>
+    <div class="form-group mar">
+      <label for="address">Course:</label>
+<div>
+  <select id="course" class="form-control">
+    <option value="" selected>Select Course</option>
+    <option value="Certificate in Computer Application(CCA)">Certificate in Computer Application</option>
+    <option value="Diploma in Computer Application(DCA)">Diploma in Computer Application</option>
+    <option value="School Course(SC)">School Course</option>
+  </select>
+</div>
+    </div>
+    <div class="form-group mar">
+        <div class="row">
+          <div class="col gen">
+            <label for="country">Male:</label>
+            <input type="radio" name="gen" value="Male" id="male">
+          </div>
+          <div class="col gen">
+            <label for="country">Female:</label>
+            <input type="radio" name="gen" value="Female" id="female">
+          </div>
+        </div>
+    </div>
+    <div class="form-group mar">
+      <label for="message">Address:</label>
+      <input class="form-control" id="address" rows="5">
+    </div>
+    <div class="row-wrap picUp">
+      <div class="col-sm-2 txt-center">
+        <table class="table table-bordered">
+          <tbody>
+          <tr>
+            <th scope="row txt-center"><img class="displayImage" id="displayImage"  width="123px" height="165px" /></th>
+          </tr>
+          <tr style="text-align: center">
+            <th scope="row" class="p-2"><p2>PHOTO</p2></th>
+          </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <form>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="imageInput">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="form-group mar">
+        <table class = "table-wrap table-bordered t">
+          <thead>
+            <tr>
+              <th colspan="4" class="th">Manage Exam Details</th>
+            </tr>
+            <tr>
+              <th>Exam</th>
+              <th>Date</th>
+              <th>Time Form</th>
+              <th>Time To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Theory</td>
+              <td><input type="date" class="date1"></td>
+              <td><input type="time" class="fTime1"></td>
+              <td><input type="time" class="tTime1"></td>
+            </tr>
+            <tr>
+              <td>Practical</td>
+              <td><input type="date" class="date2"></td>
+              <td><input type="time" class="fTime2"></td>
+              <td><input type="time" class="tTime2"></td>
+            </tr>
+            <tr>
+              <td>Viva</td>
+              <td><input type="date" class="date3"></td>
+              <td><input type="time" class="fTime3"></td>
+              <td><input type="time" class="tTime3"></td>
+            </tr>
+            <tr>
+              <td>Project</td>
+              <td><input type="date" class="date4"></td>
+              <td><input type="time" class="fTime4"></td>
+              <td><input type="time" class="tTime4"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="btn">Submit</button>
+    <div class="row">
+      <span style="height: 50px;"></span>
+    </div>
+  </form>
+</div>
+  <script>
+
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click' , ()=>{
+      
+      const fName = document.getElementById('fName').value;
+
+      const lName = document.getElementById('lName').value;
+
+      const fhName = document.getElementById('fhName').value;
+
+      const dob = document.getElementById('dob').value;
+
+      const course = document.getElementById('course').value;
+
+      const male = document.getElementById('male').value;
+
+      const year = document.getElementById('year').value;
+
+      const roll = "JNYC/18B/" + document.getElementById('roll').value;
+
+      var gen = "";
+
+      if (document.getElementById('male').checked) {
+          gen  = "Male";
+      }
+      else if(document.getElementById('female').checked) {
+        gen = "Female";
+      }
+      else {
+        gen = "";
+      }
+      const add = document.getElementById('address').value;
+
+      localStorage.setItem('fName' , fName);
+
+      localStorage.setItem('lName' , lName);
+
+      localStorage.setItem('fhName' , fhName);
+
+      localStorage.setItem('dob',dob);
+
+      localStorage.setItem('course',course);
+
+      localStorage.setItem('gen' , gen);
+
+      localStorage.setItem('year1' , year);
+
+      localStorage.setItem('add' , add);
+
+      localStorage.setItem('roll' , roll);
+      
+      const deBugTime = (time)=>{
+
+        const split = time.split(":");
+
+        var twelveTime = "0";
+
+        if(split[0]>12) {
+            twelveTime += split[0] - 12 + " : "  + split[1] + " PM ";
+        }
+        else {
+            twelveTime = split[0] + " : " + split[1] + " AM ";
+        }
+
+        const pTime = twelveTime;
+
+        return pTime;
+      }
+
+      for (let i = 1 ; i<=4 ; i++) {
+        const date = document.querySelector(".date" + i).value;
+
+        localStorage.setItem('date' + i , date);  
+
+        var fTime = document.querySelector(".fTime" + i).value;
+
+        var tTime = document.querySelector(".tTime" + i).value;
+
+        const duretion = deBugTime(fTime) + " - " + deBugTime(tTime);
+
+        localStorage.setItem("duretion" + i , duretion);
+      }
+      window.location.href = 'admit.html';
+    });
+    const image_input = document.querySelector("#imageInput");
+        var uploaded_image = "";
+
+        image_input.addEventListener("change",function(){
+            const reader = new FileReader();
+            reader.addEventListener("load", () =>{
+                uploaded_image = reader.result;
+                document.querySelector("#displayImage").style.backgroundImage = `url(${uploaded_image})`;
+                localStorage.setItem('img' , uploaded_image);
+            });
+            reader.readAsDataURL(this.files[0]);
+        })
+  </script>
+</body>
+</html>
